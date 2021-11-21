@@ -13,7 +13,7 @@ class MainActivity2 : AppCompatActivity() {
     private var videoController:MediaController?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)s
+        setContentView(R.layout.activity_main2)
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
