@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">App</string>
+    <string name="hello">Hello World!</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="descripcion">The film is fictionally based on the criminal career of Frank Lucas, a gangster from La Grange, North Carolina who smuggled heroin into the United States on American service planes returning from the Vietnam War, before being detained by a task force led by detective Richie Roberts.</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="n">N</string>
+    <string name="popular_on_netflix">Popular on netflix</string>
+    <string name="continue_watching">Continue watching</string>
+    <string name="american_gangster">American Gangster</string>
+    <string name="mafia">Mafia</string>
+    <string name="crime">Crime</string>
+    <string name="start">Start</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="movies">Movies</string>
+    <string name="catalog">Catalog</string>
+    <string name="my_list">My List</string>
+    <string name="review">Review</string>
+    <string name="share">Share</string>
+    <string name="sir_ridley_scott_born_30_november_1937_is_an_english_film_director_and_producer">Sir Ridley Scott (born 30 November 1937) is an English film director and producer.</string>
+    <string name="plus">+</string>
+    <string name="reviews">review</string>
+    <string name="shares">Share</string>
+
+</resources>
