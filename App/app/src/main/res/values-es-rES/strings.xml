@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">App</string>
+    <string name="title_activity_main2">Title</string>
     <string name="hello">Hola mundo!</string>
+    <string name="n">N</string>
+    <string name="popular_on_netflix">Popular en netflix</string>
+    <string name="continue_watching">Seguir viendo</string>
+    <string name="american_gangster">American Gangster</string>
+    <string name="mafia">Mafia</string>
+    <string name="crime">Crimen</string>
+    <string name="descripcion">Frank Lucas (Denzel Washington) es el taciturno chófer de un importante mafioso negro de Harlem. Cuando su jefe muere inesperadamente, Frank aprovecha la oportunidad para construir su propio imperio. Gracias a su talento, se convierte no sólo en el principal narcotraficante de la ciudad, inundando las calles con productos de mejor calidad y precio, sino también en un hombre público muy respetado.</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="start">Ver</string>
+    <string name="tv_shows">Series TV</string>
+    <string name="movies">Peliculas</string>
+    <string name="catalog">Catalogo</string>
+    <string name="my_list">Mi Lista</string>
+    <string name="review">Valorar</string>
+    <string name="share">Compartir</string>
+    <string name="sir_ridley_scott_born_30_november_1937_is_an_english_film_director_and_producer">Ridley Scott (South Shields, Inglaterra; 30 de noviembre de 1937)es un director de cine, productor y guionista británico.</string>
+    <string name="plus">+</string>
+    <string name="reviews">Valorar</string>
+    <string name="shares">Compartir</string>
+
 </resources>
