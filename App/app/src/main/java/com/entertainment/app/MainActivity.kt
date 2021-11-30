@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.entertainment.domain.GetFilmUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -11,10 +12,14 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var log:MyLogActivity
+    @Inject
+    lateinit var useCase:GetFilmUseCase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         log.log("onCreate")
+        val film = useCase.run()
+        log.log(film.title)
         supportActionBar?.hide()//Delete bar
         val button = findViewById<Button>(R.id.button5)
         button.setOnClickListener{
