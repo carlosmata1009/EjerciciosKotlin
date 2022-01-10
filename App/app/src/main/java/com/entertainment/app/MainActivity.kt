@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.entertainment.app.databinding.ActivityMainBinding
 import com.entertainment.domain.GetFilmUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -14,9 +15,14 @@ class MainActivity : AppCompatActivity() {
     lateinit var log:MyLogActivity
     @Inject
     lateinit var useCase:GetFilmUseCase
+    private  lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
+        binding.textView2.setText("Popular on netflix")
+
+        setContentView(binding.root)
         log.log("onCreate")
         val film = useCase.run()
         log.log(film.title)
