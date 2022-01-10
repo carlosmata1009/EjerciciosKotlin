@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.activity.viewModels
 import com.entertainment.app.databinding.ActivityMainBinding
 import com.entertainment.domain.GetFilmUseCase
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var useCase:GetFilmUseCase
     private  lateinit var binding:ActivityMainBinding
+    private val viewModel:MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
