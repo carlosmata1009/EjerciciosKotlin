@@ -4,6 +4,10 @@ import com.entertainment.domain.Film
 import com.entertainment.domain.FilmRepository
 import javax.inject.Inject
 
-class FilmRepositoryIMPL @Inject constructor(): FilmRepository {
-    override fun getFilm()= Film("","","",1.0)
+class FilmRepositoryIMPL @Inject constructor(
+    private val dataSource:HardcodedDataSource
+    ): FilmRepository {
+    override fun getFilm(): Film {
+        return dataSource.getFilm();
+    }
 }
