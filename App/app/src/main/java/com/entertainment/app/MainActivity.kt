@@ -15,19 +15,18 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var log:MyLogActivity
     @Inject
-    lateinit var useCase:GetFilmUseCase
     private  lateinit var binding:ActivityMainBinding
     private val viewModel:MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
-        binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
-        binding.textView2.setText("Popular on netflix")
-
+        viewModel.loadFilm()
+        viewModel.film.observe(this){
+            binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
+            binding.textView2.setText("Popular on netflix")
+        }
         setContentView(binding.root)
         log.log("onCreate")
-        val film = useCase.run()
-        log.log(film.title)
         supportActionBar?.hide()//Delete bar
         val button = findViewById<Button>(R.id.button5)
         button.setOnClickListener{
