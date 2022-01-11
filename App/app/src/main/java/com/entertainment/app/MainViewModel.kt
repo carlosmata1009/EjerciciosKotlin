@@ -1,5 +1,6 @@
 package com.entertainment.app
 
+import android.icu.text.CaseMap
 import androidx.lifecycle.*
 import com.entertainment.domain.Film
 import com.entertainment.domain.GetFilmUseCase
@@ -9,10 +10,11 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val useCase: GetFilmUseCase
     ):ViewModel(),LifecycleObserver {
-    private val filmLiveData = MutableLiveData<Film>()
-    val film:LiveData<Film> = filmLiveData
+    private val filmLiveData = MutableLiveData<FilmDataView>()
+    val film:LiveData<FilmDataView> = filmLiveData
     fun loadFilm(){
         val loadedFilm=useCase.execute()
-        filmLiveData.value=loadedFilm
+        filmLiveData.value=FilmDataView(loadedFilm.title)
     }
 }
+data class FilmDataView(val title: String)
