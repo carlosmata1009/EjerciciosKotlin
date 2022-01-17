@@ -13,7 +13,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     @Inject
-    lateinit var log:MyLogActivity
+    lateinit var log:MyLogActivitys
     @Inject
     private  lateinit var binding:ActivityMainBinding
     private val viewModel:MainViewModel by viewModels()
