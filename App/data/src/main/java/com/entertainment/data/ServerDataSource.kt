@@ -12,9 +12,10 @@ class ServerDataSource @Inject constructor() {
         .build()
     private val api: FilmApi=retrofit.create(FilmApi::class.java)
     suspend fun getFilm(id:Int, language: String): Film {
-        val dto = api.getFilm(id,language)
+        val filmDto = api.getFilm(id,language)
         val creditsDto=api.getCredits(id)
-        creditsDto.cast.firstOrNull(){it.name="Directing"}
+        val director= creditsDto.cast.firstOrNull(){it.role=="Directing"}?.name?:""
 
+        return Film(filmDto.title,filmDto.imageURL,director,filmDto.description,filmDto.rating)
     }
 }
