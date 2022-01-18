@@ -16,6 +16,6 @@ class ServerDataSource @Inject constructor() {
         val creditsDto=api.getCredits(id)
         val director= creditsDto.cast.firstOrNull(){it.role=="Directing"}?.name?:""
 
-        return Film(filmDto.title,filmDto.imageURL,director,filmDto.description,filmDto.rating)
+        return Film(filmDto.title,filmDto.imageURL,filmDto.description,director,filmDto.rating)
     }
 }

@@ -12,7 +12,7 @@ interface FilmApi {
         @Path("id") filmId: Int,
         @Query("language") language: String,
         @Query("api_key") apiKey: String = API_KEY
-    )
+    ): dto
 
     @GET("movie/{credits}")
     suspend fun getCredits(
