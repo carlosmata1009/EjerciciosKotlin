@@ -1,5 +1,5 @@
 package com.entertainment.domain
 
 interface FilmRepository {
-    fun getFilm():Film
+    suspend fun getFilm(id: Int, language:String):Film?
 }

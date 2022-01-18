@@ -5,9 +5,13 @@ import com.entertainment.domain.FilmRepository
 import javax.inject.Inject
 
 class FilmRepositoryIMPL @Inject constructor(
-    private val dataSource:HardcodedDataSource
+    private val dataSource:ServerDataSource
     ): FilmRepository {
-    override fun getFilm(): Film {
-        return dataSource.getFilm();
+    override suspend fun getFilm(id:Int,language: String): Film? {
+        try{
+            return dataSource.getFilm(id,language)
+        }catch (e:Exception){
+            return null
+        }
     }
 }
