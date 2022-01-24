@@ -13,8 +13,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     @Inject
-    lateinit var log:MyLogActivitys
-    @Inject
+    lateinit var log:MyLogActivity
     private  lateinit var binding:ActivityMainBinding
     private val viewModel:MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.loadFilm()
         viewModel.film.observe(this){
             binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
-            binding.textView2.setText("Popular on netflix")
+            binding.textView4.text = it.title
         }
         setContentView(binding.root)
         log.log("onCreate")
