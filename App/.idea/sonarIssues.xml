@@ -183,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/com/entertainment/domain/GetFilmsUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/domain/src/main/java/com/entertainment/domain/UseCaseFilm.kt">
           <value>
             <set />

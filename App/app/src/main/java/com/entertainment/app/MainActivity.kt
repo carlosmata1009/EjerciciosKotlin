@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
             binding.textView4.text = it.title
             Glide.with(this).load(it.imageUrl).into(binding.imageView5)
-
         }
 
         setContentView(binding.root)
