@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.viewModels
+import com.bumptech.glide.Glide
 import com.entertainment.app.databinding.ActivityMainBinding
-import com.entertainment.domain.GetFilmUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -23,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         viewModel.film.observe(this){
             binding.imageView5.setImageResource(R.drawable._509356385_american_gangster)
             binding.textView4.text = it.title
+            Glide.with(this).load(it.imageUrl).into(binding.imageView5)
+
         }
+
         setContentView(binding.root)
         log.log("onCreate")
         supportActionBar?.hide()//Delete bar
