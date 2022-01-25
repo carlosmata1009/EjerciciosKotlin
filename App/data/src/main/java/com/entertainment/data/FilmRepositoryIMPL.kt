@@ -14,4 +14,12 @@ class FilmRepositoryIMPL @Inject constructor(
             return null
         }
     }
+
+    override suspend fun getFilms(language: String): List<Film>? {
+        try{
+            return dataSource.getFilms(language)
+        }catch (e:Exception){
+            return null
+        }
+    }
 }

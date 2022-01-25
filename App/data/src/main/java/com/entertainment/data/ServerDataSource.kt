@@ -19,4 +19,14 @@ class ServerDataSource @Inject constructor() {
 
         return Film(filmDto.title,filmDto.imageURL,filmDto.description,director,filmDto.rating)
     }
+    suspend fun getFilms(language: String):List<Film>{
+        return api.getPopular(language).films.map{
+            Film(it.id, getFullURL(it.imageUrl),it.description,it.rating,null)
+        }
+}   
 }
+
+    suspend fun getFullURL(imageUrl:String?)=
+        imageUrl?.let{
+            "https://image.tmdb.org/t/p/w500$it"
+        }
