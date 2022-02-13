@@ -29,5 +29,6 @@
     <string name="plus">+</string>
     <string name="reviews">review</string>
     <string name="shares">Share</string>
+    <string name="title_activity_film_overview">film_overview</string>
 
 </resources>
