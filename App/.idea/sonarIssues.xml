@@ -198,6 +198,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/DatabaseDatasource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/FilmApi.kt">
           <value>
             <set />
@@ -228,6 +233,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/RoomModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/ServerDataSource.kt">
           <value>
             <set />
@@ -239,6 +249,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/VideoResultDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/appDatabase.kt">
           <value>
             <set />
           </value>
