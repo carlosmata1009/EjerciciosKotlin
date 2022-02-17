@@ -203,6 +203,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/FilmEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/entertainment/data/FilmListResultDto.kt">
           <value>
             <set />
@@ -273,7 +278,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/kotlin/ProgramacionMultimedia-master/app/src/main/java/es/programacionmultimedia/list/FilmListActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/kotlin/ProgramacionMultimedia-master/app/src/main/res/layout/activity_film_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/kotlin/ProgramacionMultimedia-master/data/src/main/java/com/programacionmultimedia/data/server/ServerDataSource.kt">
           <value>
             <set />
           </value>

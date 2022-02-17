@@ -5,8 +5,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.entertainment.app.DebugLog
-import com.entertainment.app.FilmActivity
-import com.entertainment.app.databinding.ActivityFilmBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 import javax.inject.Inject
@@ -21,14 +19,14 @@ class FilmListActivity : AppCompatActivity() {
     @Inject
     lateinit var logger: DebugLog
 
-    lateinit var binding: ActivityFilmBinding
+    lateinit var binding: FilmListActivityBinding
 
     private val viewModel: FilmListViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityFilmBinding.inflate(layoutInflater)
+        binding = ActivityFilmListBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 

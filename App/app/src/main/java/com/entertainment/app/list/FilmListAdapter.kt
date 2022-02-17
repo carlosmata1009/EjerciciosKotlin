@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.entertainment.app.databinding.RcFilmListBinding
 import javax.inject.Inject
 
-open class FilmViewHolder(val binding: RcFilmListBinding) : RecyclerView.ViewHolder(binding.root)
+open class FilmViewHolder(val binding: RcqFilmListBinding) : RecyclerView.ViewHolder(binding.root)
 
 typealias OnMessageClick = (FilmOverviewDataView) -> Unit
 

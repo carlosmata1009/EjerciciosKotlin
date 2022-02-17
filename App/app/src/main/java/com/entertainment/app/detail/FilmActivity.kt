@@ -1,4 +1,4 @@
-package com.entertainment.app
+package com.entertainment.app.detail
 
 import android.content.Intent
 import android.net.Uri
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.entertainment.app.DebugLog
 import com.entertainment.app.databinding.FilmOverviewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import es.programacionmultimedia.detail.FilmViewModel
@@ -25,7 +26,7 @@ class FilmActivity : AppCompatActivity() {
     private val viewModel: FilmViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        actionBar?.setDisplayHomeAsUpEnabled(true);
+        actionBar?.setDisplayHomeAsUpEnabled(true)
         logger.log("Creating Activity")
 
         binding = FilmOverviewBinding.inflate(layoutInflater)
