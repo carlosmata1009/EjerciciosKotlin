@@ -43,6 +43,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/FilmLauncher.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/FilmListViewModel.kt">
           <value>
             <set />
@@ -78,6 +83,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/detail/FilmFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/detail/FilmViewModel.kt">
           <value>
             <set />
@@ -99,6 +109,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/list/FilmListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/entertainment/app/list/FilmListFragment.kt">
           <value>
             <set />
           </value>
@@ -143,6 +158,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activitymain.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activitymaintablet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/film_overview.xml">
           <value>
             <set />
@@ -169,6 +194,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/sw600dp.xml">
           <value>
             <set />
           </value>
@@ -324,6 +354,16 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/Desktop/kotlin/ProgramacionMultimedia-master/domain/src/main/java/es/programacionmultimedia/domain/model/Film.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/ProgramacionMultimedia-master/app/src/main/java/es/programacionmultimedia/detail/FilmFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/ProgramacionMultimedia-master/app/src/main/res/layout-sw600dp/activity_main.xml">
           <value>
             <set />
           </value>
